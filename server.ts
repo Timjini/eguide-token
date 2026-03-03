@@ -35,7 +35,7 @@ app.post('/getToken', async (req, res) => {
     attributes: participantAttributes,
 
     // Token to expire after 10 minutes
-    ttl: '10m',
+    ttl: '750m',
   });
   at.addGrant({ roomJoin: true, room: roomName });
 
