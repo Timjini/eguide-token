@@ -15,6 +15,13 @@ app.use(express.json());
 
 app.post('/getToken', async (req, res) => {
   const body = req.body;
+  console.log("body-------> ", body);
+
+  const response = null;
+  if(!response)
+  {
+    res.json({status: 500}); 
+  }
 
   // If this room doesn't exist, it'll be automatically created when
   // the first participant joins
